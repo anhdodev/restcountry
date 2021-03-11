@@ -5,6 +5,10 @@
   grid-column-gap: 60px;
   grid-row-gap: 20px; 
 
+  a {
+    text-decoration: none;
+  }
+
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
