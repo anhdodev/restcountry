@@ -1,0 +1,41 @@
+@import "../shared.scss";
+
+.Country {
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+
+  @media (max-width: 480px) {
+    padding: 0 4rem;
+  }
+  
+  &.lm {
+    .country-container {
+      background-color: $white!important;
+      color: $dark-blue-dm!important;
+    }
+  }
+
+  .country-container {
+    background-color: $dark-blue-dm;
+    width: 100%;
+    
+    color: $white;
+    max-height: 250px;
+    box-shadow:  0px 0px 15px -6px rgba(0,0,0,0.58);
+    border-radius: 10px;
+    img {
+      width: 100%;
+      max-height: 140px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .stats-container {
+      font-size: 14px;
+      padding: 1rem 1rem;
+      h4 {
+        margin-bottom: .5rem;
+      }
+    }
+  }
+}

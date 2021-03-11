@@ -1,0 +1,30 @@
+@import "../shared.scss";
+
+.App {
+  min-height: 100vh;
+  background-color: $very-dark-blue-dm;
+
+  &.lm {
+    background-color: $very-light-gray-lm;
+
+    .header {
+      background-color: $white;
+      color: $very-dark-blue-lm;
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: $dark-blue-dm;
+    color: $white;
+
+    .dark-mode-switcher {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

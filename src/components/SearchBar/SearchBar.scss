@@ -1,0 +1,47 @@
+@import "../shared.scss";
+
+.SearchBar {
+  margin-top: .5rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  &.lm {
+    input {
+      background-color: $white!important;
+      color: $dark-blue-dm!important;
+      &::placeholder {
+        color: $dark-blue-dm!important;
+      }
+    }
+
+    select {
+      background-color: $white!important;
+      color: $dark-blue-dm!important;
+    }
+  }
+
+  input {
+    padding: 0.5rem 1.25rem;
+    line-height: 1.5rem;
+    background-color: $dark-blue-dm;
+    border: none;
+    color: $white;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  select {
+    background-color: $dark-blue-dm;
+    border: none;
+    color: $white;
+    padding: 0.5rem 1.25rem;
+    line-height: 1.5rem;
+  }
+}
